@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Task 3</title>
+</head>
+<body>
+    <header>
+        <form id="regexpForm" name="regexpForm" action="#">
+            <fieldset>
+                <legend>Profile form</legend>
+                <div>
+                    <label for="fullName">
+                        <b>Full name: </b>
+                        <input name="fullName" id="fullName" type="text" placeholder="Ivanov Ivan Ivanovich" pattern="[A-Za-zА-Яа-яЁё\s]{5,25}" title="Please enter your full name" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="userEmail">
+                        <b>E-mail: </b>
+                        <input name="userEmail" id="userEmail" type="email" placeholder="example@domain.com" pattern="((\w{3,})@(\w{3,})\.([A-Za-z]{2,}))" title="Three symbols atleast '@' than again atleast three symbols '.' and two to six letters at the end" required>
+                    </label>
+                </div>
+                <div>
+                    <label for="userPass">
+                        <b>Password: </b>
+                        <input name="userPass" id="userPass" type="password" pattern="(?=.*[0-9])(?=.*[A-Z]).{8,}" title="Password must be atleast 8 characters long and include one digit and one upper-case letter" required>
+                    </label>
+                </div>
+                <div>
+                    <button type="submit" form="regexpForm">Submit</button>
+                </div>
+            </fieldset>
+        </form>
+    </header>
+    <main>
+        <a href="table.html">Go see the table</a>
+    </main>
+</body>
+</html>
