@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Task 2</title>
+</head>
+<body>
+    <form name="userAplicationForm" id="userAplicationForm">
+        <div>
+            <label for="fullName">Name</label>
+            <input type="text" name="fullName" id="fullName" placeholder="John Doe">
+        </div>
+        <div> 
+            <label for="email">Email</label>
+            <input type="text" name="email" id="email" placeholder="johndoe@example.com">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input name="password" id="password" type="password" placeholder="••••••">
+        </div>
+        <div>
+            <p>Gender</p>
+            <input name="sex" type="radio" id="male">
+            <label for="male">Male</label>
+            <input name="sex" type="radio" id="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <label for="birthdate">Birthdate</label>
+            <input name="birthdate" id="birthdate" type="date" value="2000-01-01">
+        </div>
+        <div>
+            <label for="contactsOne">Contacts</label>
+            <select name="contactsOne" id="contactsOne" size="1">
+                <option value="skype" selected>Skype</option>
+                <option value="other">Other</option>
+            </select>
+            <input name="nicknameOne" type="text" placeholder="johndoe">
+            <button name="deleteFirst" type="button" form="userAplicationForm">Delete</button>
+        </div>
+        <div>
+            <select name="contactsTwo" size="1">
+                <option value="skype">Skype</option>
+                <option value="other" selected>Other</option>
+            </select>
+            <input name="socialNetwork" type="text" placeholder="Facebook">
+            <input name="nicknameTwo" type="text" placeholder="johndoe">
+            <button name="deleteSecond" type="button" form="userAplicationForm">Delete</button>
+        </div>
+        <div>
+            <button name="saveButton" type="button">Save</button>
+            <p>or</p>
+            <button name="addNewButton" type="button">Add New</button>
+        </div>
+        <div>
+            <label for="profilePhoto">Photo</label>
+            <input name="profilePhoto" id="profilePhoto" type="file">
+        </div>
+        <div>
+            <label for="selectHobbies">Hobbies</label>
+            <select name="selectHobbies" id="selectHobbies" multiple>
+                <option value="movies">Movies</option>
+                <option value="music">Music</option>
+                <option value="cooking">Cooking</option>
+                <option value="photography">Photography</option>
+                <option value="tourism">Tourism</option>
+                <option value="cosplay">Cosplay</option>
+            </select>
+        </div>
+        <div>
+            <label for="someWordsTextarea">Some<br> words</label>
+            <textarea name="someWords" form="userAplicationForm" id="someWordsTextarea"></textarea>
+        </div>
+        <div>
+            <input name="agreement" id="agreement" type="checkbox">
+            <label for="agreement">Agreement</label>
+        </div>
+        <div>
+            <button name="updateButton" type="submit">Update profile</button>
+            <button name="nextButton" type="button">Next</button>
+        </div>
+    </form>
+</body>
+</html>
