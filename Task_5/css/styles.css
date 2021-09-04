@@ -1,18 +1,43 @@
 body {
-    display: flex;
     font-family: 'Montserrat Alternates', sans-serif;
+    font-style: italic;
     background-color:cornsilk;
 }
-#wrapper {
-    margin: 30px;
+a {
+    color: cornsilk;
 }
-header {
-    align-self: center;
+#wrapper {
+    margin: 25px;
+    padding: 25px;
 }
 img {
-    margin: 40px;
+    width: 100px;
+    height: 100px;
+}
+main{
+    width: 500px;
+}
+.article-chess{
+    background-color: lightcoral;
+    font-style: normal;
+}
+.article-headline{
+    font-weight:lighter;
 }
 aside {
     font-family: Tomorrow;
-    border: cyan;
+    font-style: normal;
+    font-weight: bolder;
+    margin: 20px;
+    padding: 10px;
+    background-color: darkgoldenrod;
+    border: 5px double rgb(0, 0, 0);
+}
+footer{
+    background-image: url(../imgs/chessPlayer.jpg);
+    opacity: 0.75;
+    padding: 25px;
+}
+.contacts{
+    opacity: 1;
 }
