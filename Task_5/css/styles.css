@@ -2,9 +2,12 @@ body {
     font-family: 'Montserrat Alternates', sans-serif;
     font-style: italic;
     background-color:cornsilk;
+    text-align: center;
 }
 a {
     color: cornsilk;
+    font-weight: bold;
+    font-style: normal;
 }
 #wrapper {
     margin: 25px;
