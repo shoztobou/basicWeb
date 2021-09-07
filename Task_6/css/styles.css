@@ -1,4 +1,4 @@
-* {
+body {
     font-family: 'Tomorrow-BoldItalic';
     font-size: 16px;
 }
@@ -46,6 +46,59 @@ label::after {
     color:#ee82ee;
     margin: .5em;
 }
+main {
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 400;
+}
 article::first-line {
     color: #ff0000;
+}
+article p{
+    text-indent: 1.5em;
+}
+article p::first-letter {
+    font-size: 30px;
+    color:#ffa07a;
+}
+article:first-child {
+    word-spacing: 30px;
+    pointer-events: none;
+}
+b {
+    letter-spacing: 10px;
+}
+#thirdP {
+    word-break: break-all;
+    width: 400px;
+}
+.borderBox {
+    display: block;
+    box-sizing: border-box;
+    margin: 15px;
+    height: 400px;
+    width: 600px;
+    border: 2px solid #d87093;
+    background-image: url(../imgs/tongue.jpg);
+    background-size:cover;
+    transition-property: background-image;
+    transition-duration: 1s;
+}
+.borderBox:hover {
+    background-image: url(../imgs/cat.png);
+    background-size: cover;
+    transition-property: background-image;
+    transition-duration: 1s;
+}
+#hidingBox {
+    display: block;
+    box-sizing: border-box;
+    border: 5px double #ff0000;
+    margin: 10px;
+    padding:10px;
+    max-width:800px;
+    max-height:400px;
+    object-fit:cover;
+}
+#hidingBox:hover {
+    visibility: collapse;
 }
