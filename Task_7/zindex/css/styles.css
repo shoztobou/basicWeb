@@ -1,0 +1,11 @@
+body {
+    position: relative;
+}
+.references {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    max-height: 400px;
+    max-width: 400px;
+    background: burlywood;
+}

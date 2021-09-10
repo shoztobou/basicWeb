@@ -1,0 +1,47 @@
+.references {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    height: 200px;
+    width: 600px;
+    transform: translate(-50%, -50%);
+    background: #deb887;
+}
+.position {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid wheat;
+    left:0;
+    width: 50%;
+    height: 99%;
+    background-color: #5f9ea0;
+    text-align: center;
+}
+.position:hover {
+    background-color: #5f9ea0af;
+}
+.zindex {
+    position: absolute;
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid wheat;
+    right: 0;
+    width: 50%;
+    height: 99%;
+    background-color: #a06c5f;
+    text-align: center;   
+}
+.zindex:hover {
+    background-color: #a06c5f7a;
+}
+a {
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+}
+a:hover {
+    opacity: 1;
+}
