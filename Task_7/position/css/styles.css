@@ -1,11 +1,85 @@
-body {
-    position: relative;
+html {
+    height: 5000px;
 }
-.references {
+body {
+    background-color: #4682b4;
+    font-size: 50px;
+    color: #ffffff;
+}
+h1 {
     position: relative;
-    display: block;
-    box-sizing: border-box;
-    max-height: 400px;
-    max-width: 400px;
-    background: burlywood;
+    top:0;
+    text-align: center;
+}
+h2 {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-align: center;
+}
+.borderBox {
+    position: absolute;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: 10px solid #ffffff;
+    height: 70%;
+    width: 90%;
+    background-color: #ffffff;
+}
+.letterA {
+    position: relative;
+    height: 48%;
+    width:50%;
+    left: 0;
+    top: 0;
+    background-color: #008080;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.letterA p {
+    position: sticky;
+    top:33%;
+}
+.centerC {
+    position: fixed;
+    left: 25%;
+    top: 50%;
+    width: 300px;
+    height: 100px;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    z-index: 1;
+}
+.centerC p {
+    position: relative;
+    color: #6a5acd;
+    left: 50%;
+}
+.letterC {
+    position: absolute;
+    height: 48%;
+    width:50%;
+    left:0;
+    bottom: 0;
+    background-color: #6a5acd;
+}
+.letterC p {
+    position: relative;
+    top: 30%;
+    left: 50%;
+}
+.letterB {
+    position: absolute;
+    top:0;
+    right:0;
+    height:100%;
+    width:48%;
+    background-color:#e9967a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

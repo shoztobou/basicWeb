@@ -1,11 +1,55 @@
-body {
-    position: relative;
+header {
+    text-align: center;
 }
-.references {
+.borderBox{
     position: relative;
-    display: block;
-    box-sizing: border-box;
-    max-height: 400px;
-    max-width: 400px;
-    background: burlywood;
+    display: flex;
+    box-sizing: content-box;
+    border: 25px solid #000;
+    padding: 25px;
+    margin:25px;
+    height: 800px;
+    width: 1000px;
+    background-color: #000;
+    z-index: -99;
+}
+.yellowBox {
+    position: absolute;
+    border: 5px solid #000;
+    left:0;
+    top:0;
+    background-color: yellow;
+    width:600px;
+    height:500px;
+    z-index: 999;
+}
+.blueBox {
+    position: absolute;
+    border: 5px solid #000;
+    right:0;
+    top:0;
+    background-color: blue;
+    width:600px;
+    height:500px;
+    z-index: -9;
+}
+.greenBox {
+    position: absolute;
+    border: 5px solid #000;
+    left:0;
+    bottom:0;
+    background-color: green;
+    width:600px;
+    height:500px;
+    z-index: 9;
+}
+.redBox {
+    position: absolute;
+    border: 5px solid #000;
+    right:0;
+    bottom:0;
+    background-color: red;
+    width:600px;
+    height:500px;
+    z-index: 99;
 }
