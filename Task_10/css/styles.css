@@ -1,19 +1,111 @@
-body {
-    padding: 50px;
+:root {
+    --color-bg: #8b008b;
+    --color-box:#7c5e97;
+    --fifteen: 15px;
 }
+
+body {
+    padding: 10px;
+    text-align: center;
+}
+.window {
+    min-height:100%;
+    padding: var(--fifteen) 10px;
+    background: var(--color-bg);
+    margin-bottom: var(--fifteen);
+}
+h2 {
+    min-width:100%;
+}
+.container {
+    min-height: 100%;
+    min-width: 70%;
+}
+.box {
+    background: var(--color-box);
+    border: 1px solid #000000;
+    min-height: calc(100vh/3);
+    min-width: calc(100vw/3);
+}
+aside {
+    border: 1px solid #000000;
+    min-height: 100%;
+}
+/* Flex Styles */
 .flex {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    background: #8b008b;
-    border: 3px solid #000000;
     text-align: center;
-}
-.flex h2 {
-    width:100%;
+    min-height: 100%;
 }
 .flex-box {
-    background: #744374;
-    max-height: 200px;
-    max-width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 2;
+}
+/* Float Styles */
+.float {
+    margin-bottom: 0;
+}
+@media (min-width:580px){
+    .container {
+        margin-right: 10px;
+    }
+    /* Flex Styles */
+    .flex {
+        flex-direction: row;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 2;
+    }
+    .flex-aside{
+        flex-grow: 1;
+    }
+    /* Inline Styles */
+    .inline-container {
+        display: inline-block;
+        min-width: 70%;
+        min-height: 100%;
+    }
+    .inline-aside {
+        display: inline-block;
+        min-height: 100%;
+        min-width: 27%;
+    }
+    /* Float Styles */
+    .float {
+        overflow: hidden;
+    }
+    .float-container {
+        float: left;
+        min-width: 70%;
+        min-height: 100%;
+    }
+    .float-aside {
+        float: right;
+        min-height: 100%;
+        min-width: 27%;
+    }
+}
+@media (min-width:1024px){
+    /* Flex Styles */
+    .flex-container {
+        flex-direction: row;
+    }
+    /* Inline Styles */
+    .inline-box {
+        display: inline-block;
+    }
+    .inline-aside {
+        position: relative;
+        top: 40px;
+    }
+    /* Float Styles */
+    .float-box {
+        float: left;
+    }
 }
