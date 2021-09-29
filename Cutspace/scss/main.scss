@@ -1,0 +1,128 @@
+$darkgrey: #323232;
+$orange:#F78434;
+//reset start
+*{
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+        padding: 0;
+        margin:0;
+}
+input{
+    font-family: inherit;
+    outline: none;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+//reset end
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+.navbar-list {
+    display: flex;
+    &-item{
+        margin-left: 42px;
+        a{
+            color:$darkgrey;
+            text-decoration: none;
+        }
+        &.active {
+            a {
+                color: $orange;
+                font-weight: 700;
+            }
+        }
+    }
+}
+.main-heading {
+    color:$darkgrey;
+    font-size: 54px;
+}
+.intro-sect {
+    .main-heading {
+        width: 680px;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .intro-row {
+        display: flex;
+        align-items: center;
+    }
+    .col-1 {
+        // flex-basis: 52%;
+        width: 52%;
+    }
+    .col-2 {
+        // flex-basis: 48%;
+        width: 48%;
+    }
+    .intro-form{
+        overflow: hidden;
+        width: 460px;
+        position: relative;
+        margin-top: 40px;
+        &-input{
+            border: 0;
+            box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);
+            border-radius: 29px;
+            padding: 20px 30px 20px 65px;
+            width: 100%;
+            &::placeholder{
+                color: #BBBBBB;
+            }
+        }
+        &:before{
+            content: "";
+            background-image: url(../img/email-icon.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+            display: inline-block;
+            width: 25px;
+            height: 20px;
+            position: absolute;
+            left:28px;
+            top:50%;
+            transform: translateY(-50%);
+
+        }
+        .btn {
+            position: absolute;
+            right: 0;
+            height: 100%;
+        }
+    }
+}
+.btn {
+    display: inline-block;
+    background-color: $orange;
+    color: white;
+    font-weight: 700;
+    padding: 18px 35px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+// .navbar-list {
+//     display: flex;
+//     list-style: none;
+//     padding: 0;
+//     margin:0;
+//     &-item{
+//         a{
+//             color:#323232;
+//             text-decoration: none;
+//         }
+//     }
+//-awdawdandkn
