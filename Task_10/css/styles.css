@@ -99,6 +99,7 @@ aside {
     /* Inline Styles */
     .inline-box {
         display: inline-block;
+        margin-right: -5px;
     }
     .inline-aside {
         position: relative;
