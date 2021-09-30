@@ -1,0 +1,248 @@
+body {
+  background: black;
+  padding: 0 15px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: burlywood;
+  padding: 10px 0 0;
+}
+main .pole {
+  background-color: black;
+  max-width: 50px;
+  height: auto;
+}
+
+.traffic-light {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: black;
+  padding: 15px;
+  border-radius: 10px;
+  max-height: 100%;
+  max-width: 200px;
+}
+.traffic-light-dot {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+@-webkit-keyframes green {
+  0% {
+    background-color: green;
+  }
+  27% {
+    background-color: green;
+  }
+  28% {
+    background-color: grey;
+  }
+  81% {
+    background-color: grey;
+  }
+  82% {
+    background-color: green;
+  }
+  100% {
+    background-color: green;
+  }
+}
+
+@keyframes green {
+  0% {
+    background-color: green;
+  }
+  27% {
+    background-color: green;
+  }
+  28% {
+    background-color: grey;
+  }
+  81% {
+    background-color: grey;
+  }
+  82% {
+    background-color: green;
+  }
+  100% {
+    background-color: green;
+  }
+}
+@-webkit-keyframes yellow {
+  0% {
+    background-color: grey;
+  }
+  29% {
+    background-color: grey;
+  }
+  30% {
+    background-color: yellow;
+  }
+  32% {
+    background-color: grey;
+  }
+  34% {
+    background-color: yellow;
+  }
+  36% {
+    background-color: grey;
+  }
+  38% {
+    background-color: yellow;
+  }
+  39% {
+    background-color: grey;
+  }
+  71% {
+    background-color: grey;
+  }
+  72% {
+    background-color: yellow;
+  }
+  74% {
+    background-color: grey;
+  }
+  76% {
+    background-color: yellow;
+  }
+  78% {
+    background-color: grey;
+  }
+  80% {
+    background-color: yellow;
+  }
+  81% {
+    background-color: grey;
+  }
+  100% {
+    background-color: grey;
+  }
+}
+@keyframes yellow {
+  0% {
+    background-color: grey;
+  }
+  29% {
+    background-color: grey;
+  }
+  30% {
+    background-color: yellow;
+  }
+  32% {
+    background-color: grey;
+  }
+  34% {
+    background-color: yellow;
+  }
+  36% {
+    background-color: grey;
+  }
+  38% {
+    background-color: yellow;
+  }
+  39% {
+    background-color: grey;
+  }
+  71% {
+    background-color: grey;
+  }
+  72% {
+    background-color: yellow;
+  }
+  74% {
+    background-color: grey;
+  }
+  76% {
+    background-color: yellow;
+  }
+  78% {
+    background-color: grey;
+  }
+  80% {
+    background-color: yellow;
+  }
+  81% {
+    background-color: grey;
+  }
+  100% {
+    background-color: grey;
+  }
+}
+@-webkit-keyframes red {
+  0% {
+    background-color: grey;
+  }
+  39% {
+    background-color: grey;
+  }
+  40% {
+    background-color: red;
+  }
+  70% {
+    background-color: red;
+  }
+  71% {
+    background-color: grey;
+  }
+  100% {
+    background-color: grey;
+  }
+}
+@keyframes red {
+  0% {
+    background-color: grey;
+  }
+  39% {
+    background-color: grey;
+  }
+  40% {
+    background-color: red;
+  }
+  70% {
+    background-color: red;
+  }
+  71% {
+    background-color: grey;
+  }
+  100% {
+    background-color: grey;
+  }
+}
+.green {
+  -webkit-animation-name: green;
+          animation-name: green;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+.yellow {
+  -webkit-animation-name: yellow;
+          animation-name: yellow;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+.red {
+  -webkit-animation-name: red;
+          animation-name: red;
+  -webkit-animation-duration: 30s;
+          animation-duration: 30s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}/*# sourceMappingURL=main.css.map */
