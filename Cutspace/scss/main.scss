@@ -17,7 +17,7 @@ input{
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
-    background: #ffffff;
+    background: #ffffffe1;
     color: $darkgrey;
 }
 //reset end
@@ -44,6 +44,7 @@ body {
 }
 h2{
     font-size: 42px;
+    margin:0;
 }
 text{
     font-size: 16px;
@@ -212,16 +213,14 @@ text{
         margin-right: 33px;
     }
     .col-1{
-        display: flex;
         position: relative;
+        display: flex;
         justify-content: space-between;
         left: -165px;
         font-size: 16px;
         &-text{
             position: absolute;
             display: flex;
-            flex-direction: row;
-            justify-content: space-between;
             align-items:center;
             padding: 29px;
             margin-top: 325px;
@@ -236,8 +235,9 @@ text{
                 height:45px;
                 margin-right: 20px;
             }
-            p{
-                margin-top: -20px;
+
+            @media (max-width:560px){
+                right: 37px;
             }
         }
     }
@@ -364,40 +364,172 @@ text{
             color: $orange;
         }
 
-        .col{
-            padding:40px 90px;
-        }
+        
         .col-1{
             background: $orange;
             color: #ffffff;
             border-radius: 20px;
             margin-right: 30px;
-
-            img{
-
-            }
         }
 
         .col-2{
             border-radius: 20px;
         }
+
+        .col{
+            padding:40px 90px;
+
+            @media (max-width:820px){
+                padding:20px 30px;
+            }
+            @media (max-width:700px){
+                margin-right:0;
+                margin-bottom: 15px;
+            }
+        }
+
+        @media (max-width:700px){
+            flex-direction: column;
+        }
     }
 }
 .why-sect{
     text-align: center;
-    margin-bottom: 160px;
+    margin-bottom: 100px;
 
     &-row{
         display:flex;
         flex-direction: row;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     h2{
         margin-bottom: 60px;
     }
-}
 
+    .col{
+        max-width: 250px;
+        margin-bottom: 35px;
+    }
+}
+.thanks-sect{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+
+    .col{
+        position: relative;
+        box-sizing: border-box;
+        border: 0.01px solid white;
+        max-width: 350px;
+        border-radius: 5px;
+    }
+
+    .play{
+        display:none;
+        position: absolute;
+        top: 130px;
+        right:20px;
+    }
+
+    .pizza{
+        position: absolute;
+        top:-40px;
+        right:-40px;
+    }
+
+    .text-block{
+        padding:30px;
+
+        .city{
+            color: $mainColor;
+        }
+    }
+
+    &-row-1{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 90px;
+
+        h2,p{
+            max-width: 450px;
+        }
+
+        @media (max-width:992px){
+            flex-wrap: wrap;
+            justify-content:center;
+
+            h2,p{
+                max-width: 90%;
+            }
+        }
+    }
+
+    &-row-2{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        @media (max-width:1200px){
+            justify-content: center;
+
+            .col-1{
+                margin-right: 30px;
+            }
+        }
+        @media (max-width:920px){
+            .col-1{
+                margin-right: 0px;
+            }
+        }
+    }
+
+    .col:hover{
+        filter: drop-shadow(0px 10px 52px rgba(0, 0, 0, 0.08));
+
+        .city {
+            color: $orange;
+        }
+        .play{
+            display:initial;
+        }
+    }
+}
+.get-sect{
+    position: relative;
+    background-image: url(../img/get-mask.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    padding:155px 0 55px;
+
+    .get-col{
+        max-width: 350px;
+
+        *{
+            color: white;
+        }
+
+        p{
+            margin-bottom: 30px;
+        }
+
+        a{
+            background: white;
+            color:$darkgrey;
+        }
+    }
+
+    .get-person{
+        position: absolute;
+        bottom:0;
+        left: 50%;
+    }
+}
 footer{
     padding: 85px 0;
 
@@ -467,5 +599,14 @@ footer{
             }
         }
         
+        @media (max-width:992px){
+            justify-self: center;
+        }
+    }
+
+    @media (max-width:992px){
+        display: flex;
+        justify-content: center;
+        text-align: center;
     }
 }
