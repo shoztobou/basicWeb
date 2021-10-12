@@ -389,15 +389,10 @@ text {
   color: #F78434;
 }
 .who-sect .row-2 .col-1 {
-  background: #F78434;
-  color: #ffffff;
-  border-radius: 20px;
   margin-right: 30px;
 }
-.who-sect .row-2 .col-2 {
-  border-radius: 20px;
-}
 .who-sect .row-2 .col {
+  border-radius: 20px;
   padding: 40px 90px;
 }
 @media (max-width: 820px) {
@@ -410,6 +405,13 @@ text {
     margin-right: 0;
     margin-bottom: 15px;
   }
+}
+.who-sect .row-2 .col:hover {
+  background: #F78434;
+  color: #ffffff;
+}
+.who-sect .row-2 .col:hover img {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(3%) saturate(3095%) hue-rotate(218deg) brightness(104%) contrast(103%);
 }
 @media (max-width: 700px) {
   .who-sect .row-2 {
@@ -533,6 +535,11 @@ text {
   background: white;
   color: #323232;
 }
+@media (max-width: 1260px) {
+  .get-sect .get-col {
+    margin-left: 10vw;
+  }
+}
 .get-sect .get-person {
   position: absolute;
   bottom: 0;
@@ -540,10 +547,8 @@ text {
 }
 @media (max-width: 1260px) {
   .get-sect .get-person {
-    position: static;
-    right: 0;
-    max-height: 30%;
-    max-width: 10%;
+    left: 60%;
+    max-width: 30vw;
   }
 }
 
