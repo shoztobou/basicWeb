@@ -538,6 +538,14 @@ text {
   bottom: 0;
   left: 50%;
 }
+@media (max-width: 1260px) {
+  .get-sect .get-person {
+    position: static;
+    right: 0;
+    max-height: 30%;
+    max-width: 10%;
+  }
+}
 
 footer {
   padding: 85px 0;
