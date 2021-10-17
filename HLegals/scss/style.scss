@@ -39,6 +39,7 @@ header{
     background-color: #F0145A;
     background-image: linear-gradient(45deg, #F0145A, #EF8080);
     background-size: 100%;
+    background-clip: text;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent; 
