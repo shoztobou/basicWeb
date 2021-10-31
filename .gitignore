@@ -130,3 +130,4 @@ dist\
 .pnp.*\
 }
 HLegals/.DS_Store
+.DS_Store
