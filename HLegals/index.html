@@ -9,77 +9,59 @@
     <title>HLegals</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a href="#" class="navbar-brand"><img src="/img/header-logo.svg"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleSupportedContent" aria-controls="navbarToggleSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-home">
+        <div class="container navbar-flex">
+            <div class="navbar-brand-container">
+                <a class="navbar-brand" href="#">
+                    <img src="/img/logo-white.svg" alt="">
+                </a>
+                <!-- <a href="#" class="navbar-brand-second">про нас</a> -->
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="navbar-line">
+                <ul class="navbar-line-lang">
+                    <li class="active">УК</li>
+                    <li>РУ</li>
+                    <li>EN</li>
+                </ul>
                 <ul class="navbar-line-list">
                     <li class="navbar-line-adress">Одеса, Адміральський пр., 3</li>
-                    <li class="navbar-line-tel"><a href="tel:+38 (050) 390 15 91">+38 (050) 390 15 91</a></li>
-                    <li class="navbar-line-fb"><a href=""><img src="/img/facebook-logo.svg" alt=""></a></li>
+                    <li class="navbar-line-tel"><a href="tel:+38(050)3901591">+38 (050) 390 15 91</a></li>
+                    <li class="navbar-line-fb"><a href="#"><img src="/img/facebook-logo-grey.svg" alt=""></a></li>
                 </ul>
             </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">про нас</a>
+                        <a class="nav-link" href="/about.html">про нас</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">послуги</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">команда</a>
+                        <a class="nav-link" href="/team.html">команда</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">публікації</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">контакти</a>
+                        <a class="nav-link" href="/contact.html">контакти</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <header>
-        <div class="header-top">
-            <a href="#">
-                <img src="./img/header-logo.svg">
-            </a>
-            <div class="header-top-contact">
-                <a href="https://goo.gl/maps/ChRRHyFJmxWcj7Yq9">Одеса, Адміральський пр., 3</a>
-                <a href="tel:+38 (050) 390 15 91">+38 (050) 390 15 91</a>
-                <a href="https://www.facebook.com/">
-                    <img src="./img/facebook-logo.svg">
-                </a>
-            </div>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">про нас</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">послуги</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">команда</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">публікації</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link">контакти</a>
-                </li>
-            </ul>
-        </div>
+    <!-- <header>
         <div class="header-splash">
             <img src="./img/heder-splash.svg" alt="">
             <img class="header-splash-symbol" src="./img/heder-splash-symbol.svg" alt="">
             <p>системний адміністратор правових рішень</p>
         </div>
-    </header>
+    </header> -->
+
     <section class="intro-sect">
         <div class="container">
             <h3 class="section-subheading section-subheading-grey-arrow">послуги</h3>
@@ -145,6 +127,114 @@
         </div>
     </section>
 
+    <section class="team-slider-sect">
+        <div class="container">
+            <div id="team-slider" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#team-slider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#team-slider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#team-slider" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="team-slider-row">
+                            <img src="img/team-slider-img.jpg" class="team-slider-img" alt="">
+                            <div class="team-slider-text">
+                                <h3 class="section-subheading section-subheading-blue-arrow">команда</h3>
+                                <h2 class="section-heading">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                <div class="team-slider-info">
+                                    <div class="team-slider-info-img">
+                                        <img src="img/team-slider-img.jpg" class="team-slider-img" alt="">
+                                    </div>
+                                    <div class="team-slider-info-text">
+                                        <p class="team-slider-name">Олександр Олександровський</p>
+                                        <p class="team-slider-role">Керуючий партнер</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="team-slider-row">
+                            <img src="img/team-slider-img.jpg" class="team-slider-img" alt="">
+                            <div class="team-slider-text">
+                                <h3 class="section-subheading section-subheading-blue-arrow">команда</h3>
+                                <h2 class="section-heading">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                <div class="team-slider-info">
+                                    <div class="team-slider-info-img">
+                                        <img src="img/team-slider-img.jpg" class="team-slider-img" alt="">
+                                    </div>
+                                    <div class="team-slider-info-text">
+                                        <p class="team-slider-name">Олександр Олександровський</p>
+                                        <p class="team-slider-role">Керуючий партнер</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="team-slider-row">
+                            <img src="img/team-slider-img.jpg" class="team-slider-img" alt="">
+                            <div class="team-slider-text">
+                                <h3 class="section-subheading section-subheading-blue-arrow">команда</h3>
+                                <h2 class="section-heading">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну, вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</h2>
+                                <div class="team-slider-info">
+                                    <div class="team-slider-info-img">
+                                        <img src="img/team-slider-img.jpg" class="team-slider-img" alt="">
+                                    </div>
+                                    <div class="team-slider-info-text">
+                                        <p class="team-slider-name">Олександр Олександровський</p>
+                                        <p class="team-slider-role">Керуючий партнер</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="clients-sect">
+        <div class="clients-grid">
+            <img src="img/clients/logo-1.svg" class="clients-grid-logo" alt="">
+            <img src="img/clients/logo-2.svg" class="clients-grid-logo" alt="">
+            <img src="img/clients/logo-3.svg" class="clients-grid-logo" alt="">
+            <img src="img/clients/logo-4.svg" class="clients-grid-logo" alt="">
+            <img src="img/clients/logo-5.svg" class="clients-grid-logo" alt="">
+            <img src="img/clients/logo-6.svg" class="clients-grid-logo" alt="">
+            <img src="img/clients/logo-7.svg" class="clients-grid-logo" alt="">
+            <img src="img/clients/logo-8.svg" class="clients-grid-logo" alt="">
+            <img src="img/clients/logo-9.svg" class="clients-grid-logo" alt="">
+            <img src="img/clients/logo-10.svg" class="clients-grid-logo" alt="">
+            <img src="img/clients/logo-11.svg" class="clients-grid-logo" alt="">
+            <img src="img/clients/logo-12.svg" class="clients-grid-logo" alt="">
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-sect">
+            <div class="footer-sect-contact">
+                <div class="line-one">
+                    <p>Одеса, Адміральський пр., 3</p>
+                    <img class="footer-sect-hide" src="/img/footer-Dot.svg">
+                    <a href="/contact.html">подивитися на мапі</a>
+                </div>
+                <div class="line-two">
+                    <a class="line-two-facebook" href="">
+                        <img src="/img/facebook-logo-blue.svg" alt="facebook logo">
+                    </a>
+                    <img class="footer-sect-hide" src="/img/footer-Dot.svg">
+                    <a class="line-two-tel" href="tel:+38(050)3901591">+38 (050) 390 15 91</a>
+                    <img class="footer-sect-hide" src="/img/footer-Dot.svg">
+                    <a class="line-two-mail" href="mailto:contact@hlegals.net">contact@hlegals.net</a>
+                </div>
+            </div>
+            <div class="footer-sect-copyright">
+                <p>© 2021 ТОВ Юридична компанія «HLEGALS»</p>
+            </div>
+        </div>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
